@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbolik Official</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Symbolik Official</h1>
+        <nav>
+            <ul>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#game" id="startGameButton">Play Symbolik's Quest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="music">
+            <h2>Music</h2>
+            <audio controls>
+                <source src="path_to_your_music_file.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <video controls>
+                <source src="path_to_your_video_file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="store">
+            <h2>Store</h2>
+            <div id="products"></div>
+            <button id="checkoutButton">Checkout</button>
+        </section>
+
+        <section id="game" style="display: none;">
+            <h2>Symbolik's Quest</h2>
+            <canvas id="gameCanvas"></canvas>
+            <button id="restartButton" style="display: none;">Restart Game</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Symbolik Official</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
